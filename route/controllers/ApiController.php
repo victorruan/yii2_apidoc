@@ -1,6 +1,6 @@
 <?php
 namespace Route\controllers;
-use app\modules\route\models\Route;
+use Route\models\Route;
 use yii\web\Controller;
 
 class ApiController extends Controller {
