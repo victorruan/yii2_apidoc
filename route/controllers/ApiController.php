@@ -7,9 +7,11 @@ class ApiController extends Controller {
     public function actionIndex()
     {
         \Yii::$app->response->format = 'html';
+
         $model = new Route();
-        $model->ignore = ['api','user'];
-        $routes =  $model->getRoutes('api');
+        $model->ignore = $this->module->ignore;
+        $show_model = $this->module->show_modules;
+        $routes =  $model->getRoutes($show_model);
 //        unset($routes['/*']);
 //        foreach ($routes as $key =>  &$route) {
 //            if(preg_match('#^/route|backend|gii|yii2images|debug/#',$key,$m)){
