@@ -1,0 +1,23 @@
+{
+    "name": "ruanjiajia/yii2_apidoc",
+    "description": "api doc for Yii2",
+    "keywords": ["yii2", "api", "doc", "apidoc"],
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "victorruan",
+            "email": "250069802@qq.com"
+        }
+    ],
+    "type": "yii2-extension",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Route\\": "route/"
+        }
+    },
+    "require": {
+        "yiisoft/yii2": "2.0.11.2"
+    }
+}
