@@ -20,3 +20,6 @@
         ],
     ]
 ```
+
+
+open http://path/to/route/api
